@@ -327,8 +327,16 @@ a.contactLink {
   color: #645d88;
 }
 
+.greenText {
+  color: #147b80;
+}
+
 .purpleBackground {
   background-color: #f1f0f5;
+}
+
+.greenBackground {
+  background-color: #def9fa;
 }
 
 .m-top-16 {
@@ -347,6 +355,14 @@ a.contactLink {
   margin-bottom: 32px !important;
 }
 
+.m-top-24 {
+  margin-top: 24px !important;
+}
+
+.m-bottom-24 {
+  margin-bottom: 24px !important;
+}
+
 .fw-600 {
   font-weight: 600;
 }
@@ -363,6 +379,16 @@ a.contactLink {
   padding: 0px 32px;
 }
 
+.greenBG {
+  width: 100%;
+  background-color: #def9fa;
+  color: #147b80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 32px;
+}
+
 .projHeadContainer {
   width: 100%;
   max-width: 1040px;
@@ -370,18 +396,26 @@ a.contactLink {
 
 .projectHeadGrid {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto;
   grid-template-columns: 3fr 1fr;
-  grid-template-areas: "titleDesc specs";
+  grid-template-areas: "pageTitle ." "titleDesc specs";
   gap: 0px;
   width: 100%;
   justify-content: start;
   padding: 80px 0px 220px;
 }
 
+.pageTitle {
+  grid-area: pageTitle;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  max-width: 700px;
+}
+
 .titleDesc {
   grid-area: titleDesc;
-
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -410,6 +444,11 @@ a.contactLink {
   color: #f1f0f5;
 }
 
+.greenCaseStudy {
+  background-color: #147b80;
+  color: #def9fa;
+}
+
 .projectDescText {
   font-size: 1.4rem;
   line-height: 1.6em;
@@ -423,7 +462,6 @@ a.contactLink {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding-top: 16px;
 }
 
 .specLabel {
@@ -491,12 +529,21 @@ a.contactLink {
   color: #111111;
 }
 
-.inContentLink {
+.inContentLinkPurple {
   border-bottom: 1px solid #f1f0f5;
   color: #6b37c1;
 }
 
-.inContentLink:hover {
+.inContentLinkPurple:hover {
+  background-color: #f1f0f5;
+}
+
+.inContentLinkGreen {
+  border-bottom: 1px solid #def9fa;
+  color: #147b80;
+}
+
+.inContentLinkGreen:hover {
   background-color: #f1f0f5;
 }
 
@@ -663,6 +710,7 @@ figure {
 .go-top {
   display: none;
 }
+
 .visible {
   display: flex;
   flex-direction: column;
@@ -677,6 +725,10 @@ figure {
   color: white;
   background-color: #f8f8f8;
   border-radius: 50%;
+  box-shadow: 0px -2px 87px rgba(0, 0, 0, 0.06),
+    0px -0.602941px 26.228px rgba(0, 0, 0, 0.0390953),
+    0px -0.250431px 10.8938px rgba(0, 0, 0, 0.03),
+    0px -0.090576px 3.94006px rgba(0, 0, 0, 0.0209047);
 }
 
 .visible:hover {
@@ -722,10 +774,14 @@ figure {
   }
 
   .projectHeadGrid {
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "titleDesc" "specs";
+    grid-template-areas: "pageTitle" "." "titleDesc" "specs";
     padding: 80px 0px 100px;
+  }
+
+  .pageTitle {
+    max-width: 100%;
   }
 
   .titleDesc {
@@ -778,6 +834,11 @@ figure {
 
   li {
     margin-bottom: 24px;
+  }
+
+  .visible {
+    width: 56px;
+    height: 56px;
   }
 }
 
