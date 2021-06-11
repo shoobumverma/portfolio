@@ -8,6 +8,13 @@ html {
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  :focus {
+    transition: outline-offset 0.2s ease-in-out;
+    outline-offset: 5px;
+  }
+}
+
 body {
   font-family: "Heebo", sans-serif;
   line-height: 1.6em;
@@ -110,6 +117,12 @@ a:active {
   height: 32px;
 }
 
+.navLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 a.navLogo:active {
   background: none;
 }
@@ -123,7 +136,7 @@ a.navLogo:active {
 
 .introItem {
   grid-area: intro;
-  margin: 120px 0px 160px 0px;
+  margin: 120px 0px 160px;
   max-width: 100%;
 }
 
@@ -141,6 +154,22 @@ h1 {
   line-height: 1.6em;
   font-weight: 400;
   color: #a3a3a3;
+}
+
+.resumeButton {
+  padding: 8px 16px;
+  background: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6em;
+  color: #645d88;
+  border: 1px solid #645d88;
+  border-radius: 4px;
+}
+
+.resumeButton:hover {
+  background: #645d88;
+  color: #ffffff;
 }
 
 .highlightName {
@@ -353,6 +382,14 @@ a.contactLink {
   margin-bottom: 16px;
 }
 
+.m-top-24 {
+  margin-top: 24px !important;
+}
+
+.m-bottom-24 {
+  margin-bottom: 24px !important;
+}
+
 .m-top-32 {
   margin-top: 32px !important;
 }
@@ -361,12 +398,12 @@ a.contactLink {
   margin-bottom: 32px !important;
 }
 
-.m-top-24 {
-  margin-top: 24px !important;
+.m-top-64 {
+  margin-top: 64px !important;
 }
 
-.m-bottom-24 {
-  margin-bottom: 24px !important;
+.m-bottom-64 {
+  margin-bottom: 64px !important;
 }
 
 .fw-600 {
@@ -608,7 +645,7 @@ figcaption {
   color: #999999;
   font-size: 0.9rem;
   text-align: center;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .imageLink {
@@ -682,7 +719,7 @@ li {
   width: 26px;
   height: 30px;
   border-radius: 4px;
-  background-color: #f1f0f5;
+  background-color: #f3f3f3;
   margin-right: 16px;
   display: inline-block;
 }
@@ -791,6 +828,10 @@ figure {
     row-gap: 0px;
   }
 
+  .introItem {
+    margin: 80px 0px 160px;
+  }
+
   h1 {
     font-size: 1.4rem;
   }
@@ -806,6 +847,10 @@ figure {
     color: rgba(0, 0, 0, 0.8);
     margin-bottom: 32px;
     height: 3.2em;
+  }
+
+  .studyItem:hover {
+    opacity: 100%;
   }
 
   /* project pages */
