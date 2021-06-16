@@ -359,7 +359,7 @@ a.contactLink {
 /* multi use classes start */
 
 .purpleText {
-  color: #645d88;
+  color: #5e3d9f;
 }
 
 .greenText {
@@ -367,11 +367,11 @@ a.contactLink {
 }
 
 .blueText {
-  color: #1479ff;
+  color: #006cfb;
 }
 
 .purpleBackground {
-  background-color: #f1f0f5;
+  background-color: #f5f5ff;
 }
 
 .greenBackground {
@@ -379,7 +379,7 @@ a.contactLink {
 }
 
 .blueBackground {
-  background-color: #f5f9ff;
+  background-color: #e0edff;
 }
 
 .m-top-16 {
@@ -422,8 +422,8 @@ a.contactLink {
 
 .purpleBG {
   width: 100%;
-  background-color: #f1f0f5;
-  color: #645d88;
+  background-color: #f5f5ff;
+  color: #5e3d9f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,8 +442,8 @@ a.contactLink {
 
 .blueBG {
   width: 100%;
-  background-color: #e0eeff;
-  color: #1479ff;
+  background-color: #e0edff;
+  color: #006cfb;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -487,7 +487,7 @@ a.contactLink {
 .projectTitleText {
   font-size: 3rem;
   line-height: 1.6em;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0px 0px 16px 0px;
 }
 
@@ -501,8 +501,8 @@ a.contactLink {
 }
 
 .purpleCaseStudy {
-  background-color: #645d88;
-  color: #f1f0f5;
+  background-color: #5e3d9f;
+  color: #f5f5ff;
 }
 
 .greenCaseStudy {
@@ -511,8 +511,8 @@ a.contactLink {
 }
 
 .blueCaseStudy {
-  background-color: #1479ff;
-  color: #e0eeff;
+  background-color: #006cfb;
+  color: #e0edff;
 }
 
 .projectDescText {
@@ -596,12 +596,12 @@ a.contactLink {
 }
 
 .inContentLinkPurple {
-  border-bottom: 1px solid #f1f0f5;
-  color: #6b37c1;
+  border-bottom: 1px solid #f5f5ff;
+  color: #5e3d9f;
 }
 
 .inContentLinkPurple:hover {
-  background-color: #f1f0f5;
+  background-color: #f5f5ff;
 }
 
 .inContentLinkGreen {
@@ -614,12 +614,12 @@ a.contactLink {
 }
 
 .inContentLinkBlue {
-  border-bottom: 1px solid #f5f9ff;
-  color: #1479ff;
+  border-bottom: 1px solid #e0edff;
+  color: #006cfb;
 }
 
 .inContentLinkBlue:hover {
-  background-color: #f5f9ff;
+  background-color: #e0edff;
 }
 
 .paraContent {
@@ -846,7 +846,7 @@ figure {
   font-size: 1rem;
   line-height: 1.6em;
   font-weight: 600;
-  color: #111111;
+  color: inherit;
 }
 
 /*mobile*/
