@@ -48,41 +48,6 @@ a:active {
   opacity: 100%;
 }
 
-/*Magical Link Animation Start*/
-
-.link {
-  position: relative;
-  white-space: nowrap;
-}
-
-.link::before,
-.link::after {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background: #111111;
-  top: 100%;
-  left: 0;
-}
-
-.link::before {
-  content: "";
-  /* show by default */
-}
-
-.link--metis::before {
-  transform-origin: 100% 50%;
-  transform: scale3d(0, 1, 1);
-  transition: transform 0.3s;
-}
-
-.link--metis:hover::before {
-  transform-origin: 0% 50%;
-  transform: scale3d(1, 1, 1);
-}
-
-/*Magical Link Animation End*/
-
 .bodyContainer {
   padding: 0px 32px;
   display: flex;
@@ -338,7 +303,7 @@ a.studyItem:active {
   line-height: 1.6em;
   font-weight: 500;
   color: #111111;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .contactFlex {
@@ -348,12 +313,30 @@ a.studyItem:active {
   font-size: 1rem;
   line-height: 1.6em;
   color: #a3a3a3;
+  justify-content: space-between;
 }
 
 a.contactLink {
-  margin-right: 16px;
+  margin-right: 4px;
 }
 
+.contactLink {
+  margin-right: 4px;
+}
+
+.contactLinkDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.contactLinkMailDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
 /* project pages */
 
 /* multi use classes start */
@@ -888,6 +871,14 @@ figure {
 
   .studyItem:hover {
     opacity: 100%;
+  }
+
+  .contactHeading {
+    text-align: center;
+  }
+
+  .contactFlex {
+    justify-content: center;
   }
 
   /* project pages */
