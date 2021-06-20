@@ -121,22 +121,6 @@ h1 {
   color: #a3a3a3;
 }
 
-.resumeButton {
-  padding: 8px 16px;
-  background: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.6em;
-  color: #645d88;
-  border: 1px solid #645d88;
-  border-radius: 4px;
-}
-
-.resumeButton:hover {
-  background: #645d88;
-  color: #ffffff;
-}
-
 .highlightName {
   color: #645d88;
 }
@@ -226,6 +210,10 @@ a.studyItem:active {
   transition: all 0.2s;
 }
 
+.highlightItem {
+  height: 300px !important;
+}
+
 .companyText {
   font-size: 1rem;
   font-weight: 500;
@@ -247,6 +235,10 @@ a.studyItem:active {
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 32px;
   height: 3.2em;
+}
+
+.smallCardTitleText {
+  height: 1.6em !important;
 }
 
 .readText {
@@ -427,6 +419,16 @@ a.contactLink {
   width: 100%;
   background-color: #e0edff;
   color: #006cfb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 32px;
+}
+
+.highlightBG {
+  width: 100%;
+  background-color: #f9f9f9;
+  color: #111111;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -837,6 +839,33 @@ figure {
   color: inherit;
 }
 
+/* highlight page */
+
+.highlightHeadGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px 220px;
+}
+
+.highlightTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlightDescText {
+  font-size: 1.4rem;
+  line-height: 1.6em;
+  font-weight: 400;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
 /*mobile*/
 @media only screen and (min-width: 0px) and (max-width: 640px) {
   .caseStudiesGrid {
@@ -896,10 +925,6 @@ figure {
     grid-template-columns: 1fr;
     grid-template-areas: "pageTitle" "." "titleDesc" "specs";
     padding: 80px 0px 100px;
-  }
-
-  .pageTitle {
-    max-width: 100%;
   }
 
   .titleDesc {
