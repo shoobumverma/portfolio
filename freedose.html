@@ -113,7 +113,7 @@
             </div>
 
             <div class="projectSpecs">
-              <span class="specLabel">Organization</span>
+              <span class="specLabel">Project</span>
               <span class="specData">Freedose</span>
 
               <span class="specLabel">Date shipped</span>
@@ -151,10 +151,10 @@
           was an attempt to create a platform that connects people in low income
           Indian households with individuals willing to
           <span class="fw-600"> fund their Covid-19 vaccine </span>.The cost of
-          vaccines ranging from ₹ 950 - ₹ 1,200 per dose was far beyond
-          affordable for many in the working class, which led to this
-          initiative. <span class="imageLink">Image 1</span> outlines how
-          Freedose functions.
+          vaccines ranging from ₹ 950 - ₹ 1,200 per dose was far from affordable
+          for many in the working class, which led to this initiative.
+          <span class="imageLink">Image 1</span> outlines how Freedose
+          functions.
         </p>
 
         <div class="imageContainer m-bottom-24">
@@ -194,8 +194,8 @@
           <div class="tinyHeading purpleText">Project Intent</div>
 
           <div class="statementText">
-            Design a fool-proof and secure process for participants to get funds
-            for their vaccination.
+            Design a simple and secure process for participants to register,
+            submit vaccination proof and track fund transfer.
           </div>
         </div>
       </div>
@@ -227,7 +227,9 @@
         <p class="paraContent">
           In an attempt to have the platform ready by the date of vaccination
           rollout (within 10 days), I was unable to conduct tests for any of the
-          designs.
+          designs. I also avoided certain solutions that would result in greater
+          cost through reliance on third party services such as SMS due to
+          monetary limitations.
         </p>
       </div>
 
@@ -237,31 +239,567 @@
         <div class="bigHeading">Users & audience</div>
 
         <p class="paraContent">
-          sumHR is used in office work environments across a variety of
-          industries and organizational structures. The platform can be divided
-          into three different regions that serve different personas based on
-          their role in the company and HR team.
+          Freedose has two user roles; the participant that wants to get
+          vaccinated, and the supporter that want to sponsor the vaccination. A
+          brief of the user personas are shown in
+          <span class="imageLink">Image 2</span>
         </p>
 
         <div class="inLineimageContainer m-bottom-32">
-          <div class="ImageContainer">
+          <div class="imageContainer">
             <figure>
               <img
                 src="./svg/freedose/freedose-persona.svg"
-                alt="Example of sumHR personas in an organization chart"
+                alt="Brief of user personas"
                 class="oneImageClass"
-                height="600px"
               />
-              <figcaption>
-                Image X - Example of sumHR personas in an organization chart
-              </figcaption>
+              <figcaption>Image 2 - Brief of user personas</figcaption>
             </figure>
           </div>
+        </div>
+
+        <p class="paraContent">
+          The problem statement at hand focuses on the role of the participant
+          and their experience on the platform.
+        </p>
+      </div>
+
+      <div class="contentContainer">
+        <div class="tinyHeading purpleText">Approach</div>
+
+        <div class="bigHeading">The Challenge</div>
+
+        <p class="paraContent">
+          To help better understand the challenges users may face, I created a
+          <span class="fw-600">storyboard</span> and
+          <span class="fw-600">user flow map</span> of the end to end
+          experience. Since I wasn't able to conduct user research, they served
+          as an important tool to help identify problems.
+        </p>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/storyboard-freedose.jpg"
+              alt="Storyboarding of entire process"
+              class="oneImageClass"
+            />
+            <figcaption>Image 2 - Storyboarding of entire process</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/user-flow.jpg"
+              alt="Problems faced with regards to salary structure"
+              class="oneImageClass"
+            />
+            <figcaption>
+              Image 3 - User flow of Participant [Top] and Supporter [Bottom]
+            </figcaption>
+          </figure>
         </div>
       </div>
 
       <div class="contentContainer m-bottom-32">
-        <div class="tinyHeading purpleText topDivider">Special thanks 💙</div>
+        <p class="paraContent">
+          Initial research led me to define some UX principles moving forward:
+        </p>
+
+        <ul class="uList m-bottom-16">
+          <li>
+            <div class="bulletIcon">👀</div>
+            <span class="fw-600">Visual feedback </span>
+            for every interaction and status update
+          </li>
+          <li>
+            <div class="bulletIcon">🚨</div>
+            <span class="fw-600">Visibility of necessary </span>
+            items only, stay minimal
+          </li>
+          <li>
+            <div class="bulletIcon">🧠</div>
+            <span class="fw-600">Offload cognitive effort </span>
+            to the platform
+          </li>
+          <li>
+            <div class="bulletIcon">👉</div>
+            <span class="fw-600">Reduce options </span>
+            and guide user at the cost of control
+          </li>
+          <li>
+            <div class="bulletIcon">🔊</div>
+            <span class="fw-600">Overexplain </span>
+            where necessary and use words over images
+          </li>
+        </ul>
+      </div>
+
+      <div class="highlightSection purpleBackground m-bottom-32">
+        <div class="statementContainer">
+          <div class="tinyHeading purpleText">Where are the challenges?</div>
+
+          <ul class="uList">
+            <li>
+              <div class="bulletIcon clearPurpleBG">1️⃣</div>
+              <span class="fw-600">Easy login: </span>
+              Often scary as remembering credentials can be a pain
+            </li>
+            <li>
+              <div class="bulletIcon clearPurpleBG">2️⃣</div>
+              <span class="fw-600">Current status: </span>
+              What has happened, where do I stand?
+            </li>
+            <li>
+              <div class="bulletIcon clearPurpleBG">3️⃣</div>
+              <span class="fw-600">Next step: </span>
+              Steps to follow to reach next step
+            </li>
+            <li>
+              <div class="bulletIcon clearPurpleBG">4️⃣</div>
+              <span class="fw-600">Action: </span>
+              Ensuring required action is performed
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <div class="tinyHeading purpleText">Design</div>
+
+        <div class="bigHeading">1️⃣ Easy login</div>
+
+        <p class="paraContent">
+          One of the goals was to ensure participants don't get locked out of
+          their account due to forgotten credentials or a difficult login
+          process. Abstract details like a login password would prove to be
+          difficult to retain when forgotten. A common solution of a forgot
+          password process would be adding far too much friction.
+        </p>
+
+        <p class="paraContent">
+          The decision to use <span class="fw-600">phone number</span> as the
+          primary login ID came naturally since many of our targeted users would
+          not have access to an email address. Also, the integration of an email
+          service would rely on a third party email client which would add to
+          the complication of the system.
+        </p>
+
+        <p class="paraContent">
+          To avoid forgotten passwords, I decided to use a
+          <span class="fw-600">derivable password</span>, a password one could
+          work out. Since we weren't hosting sensitive personal information in
+          the account, the login measure didn't need to be very secure. After
+          going through the data being collected as part of the registration
+          process, the PIN Code stood out to have the perfect qualities to serve
+          as a password.
+        </p>
+
+        <p class="paraContent">
+          Properties of a PIN making it suitable as a password:
+          <span class="fw-600">🧠 derivable</span>, 📏 has a
+          <span class="fw-600">fixed length</span>,
+          <span class="fw-600">🔢 fixed input type </span>(numbers).
+        </p>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/onboard-hifi-1.png"
+              alt="Participant login, concept design"
+              class="oneImageClass"
+            />
+            <figcaption>Image 4 - Participant login, concept design</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <p class="paraContent">Other decisions to ensure smooth login:</p>
+
+        <ul class="uList m-bottom-16">
+          <li>
+            <div class="bulletIcon">🌏</div>
+            <span class="fw-600">Language selection</span>
+            as primary focus on landing
+          </li>
+          <li>
+            <div class="bulletIcon">🧙‍♂️</div>
+            <span class="fw-600">Auto detection</span>
+            of login vs. new user to offload decision making
+          </li>
+        </ul>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <div class="tinyHeading purpleText">Design</div>
+
+        <div class="bigHeading">2️⃣ Current status</div>
+
+        <p class="paraContent">
+          <span class="fw-600">Status visibility</span> being one of the key UX
+          principles defined, I wanted to ensure participants are constantly
+          aware of where they stand in reaching their goal of getting free
+          vaccination. Since the users had one goal, and a pre defined set of
+          steps to reach there, I was able to avoid complexity in the interface.
+        </p>
+
+        <p class="paraContent">
+          The platform was structured to show the current state and set
+          expectations at a glance, on the home screen itself. This would mimic
+          the functionality of a notice board without distractions and
+          requirements of parallel processes.
+        </p>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/status-hifi-1.png"
+              alt="Brief of user personas"
+              class="oneImageClass"
+            />
+            <figcaption>
+              Image 5 - Participant home screen, concept design
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <p class="paraContent">
+          The <span class="fw-600">current status</span> card was designed to
+          give a quick, summary of the status. The card would reflect the
+          current state with a button for further details.
+          <span class="fw-600">Clear and concise content </span> was an integral
+          aspect of making the card effective.
+        </p>
+
+        <p class="paraContent">
+          All the status card designs can be seen below in
+          <span class="imageLink">Image 7</span>.
+        </p>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer m-bottom-32">
+          <figure>
+            <img
+              src="./svg/freedose/status-animation.gif"
+              alt="Home screen with all status cards, animation"
+              class="oneImageClass image800"
+            />
+            <figcaption>
+              Image 6 - Home screen with all status cards, animation
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/status-hifi-2.png"
+              alt="Status cards, concept design"
+              class="oneImageClass image800"
+            />
+            <figcaption>Image 7 - Status cards, concept design</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <p class="paraContent">
+          The entire process was designed to be repetitive around a single dose.
+          The status cards once cycled through for the first dose, would repeat
+          again for the second, as the process remains the same. This allowed
+          participants to gain familiarity with recalling the experience from
+          dose 1 going onwards to dose 2.
+        </p>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <div class="tinyHeading purpleText">Design</div>
+
+        <div class="bigHeading">3️⃣ Next step</div>
+
+        <p class="paraContent">
+          Achieving the goal at hand will require the participants to follow
+          steps and complete tasks. There's two aspects of this:
+          <span class="fw-600">brief overview of all steps</span>, and
+          <span class="fw-600">detailed information for current step.</span>
+        </p>
+
+        <p class="paraContent">
+          The brief overview is provided on the home screen in the form of a
+          <span class="fw-600"> non-actionable list. </span> The list updates to
+          show only the upcoming steps and hides steps that have been completed.
+          This goes in accordance with our defined UX principles of
+          <span class="fw-600">visibility of necessary.</span>
+        </p>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/steps-hifi-1.png"
+              alt="Upcoming steps on home page, concept design"
+              class="oneImageClass image800"
+            />
+            <figcaption>
+              Image 8 - Upcoming steps on home page, concept design
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <p class="paraContent">
+          As to not overwhelm the interface and the participant, the process has
+          been divided into two sections, one for each dose. The steps will
+          reflect for the current dose only.
+        </p>
+
+        <p class="paraContent">
+          The vaccination process is new and constantly changing with new
+          government regulations and guidelines being released frequently. The
+          participants would require assistance in completing tasks that are
+          dependent on third party interfaces, such as the national vaccination
+          registration portal. Freedose had to not only provide details of the
+          steps, but also serve as a
+          <span class="fw-600"> source of information </span> to help
+          participants in successfully getting their vaccine.
+        </p>
+
+        <p class="paraContent">
+          The details page, accessed through the CTA on home page was the
+          solution. Designed to provide relevant and detailed information and
+          avoid distractions and any branching actions.
+        </p>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/steps-hifi-2.png"
+              alt="Detailed steps page, concept design"
+              class="oneImageClass"
+            />
+            <figcaption>
+              Image 9 - Detailed steps page, concept design
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <p class="paraContent">
+          Although a repetitive summary section from the home screen, it was
+          evaluated to be a small cost in comparison to the value being added
+          for users. It would also provide quick context upon returning to the
+          screen. The illustrations help build context and provide clarity
+          faster as well, being an important aspect that was carefully designed.
+        </p>
+
+        <p class="paraContent">
+          The layout proved to be effective across quick short steps as well as
+          larger multi steps processes. A few examples are shown in
+          <span class="imageLink">Image 10</span>
+        </p>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/steps-hifi-3.png"
+              alt="Detailed steps of varying complexity, concept design"
+              class="oneImageClass"
+            />
+            <figcaption>
+              Image 10 - Detailed steps of varying complexity, concept design
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/steps-hifi-4.png"
+              alt="Summary section designs"
+              class="oneImageClass image800"
+            />
+            <figcaption>Image 11 - Summary section designs</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <div class="tinyHeading purpleText">Design</div>
+
+        <div class="bigHeading">4️⃣ Action</div>
+
+        <p class="paraContent">
+          There are steps that involve the user taking an action in order to
+          proceed further towards their goal. Actions can be scary as they open
+          vulnerabilities to errors (both slips and mistakes) and can add a
+          certain level of complexity. A common structure was established to
+          minimize the problems.
+        </p>
+
+        <p class="paraContent">
+          Primarily, the main action for each step was
+          <span class="fw-600">highlighted</span> on the home screen, as well as
+          the summary section of the details screen. This ensured users wouldn't
+          delay or miss taking actions, some of which are time sensitive.
+        </p>
+
+        <p class="paraContent m-bottom-32">
+          All subsequent actions were provided as secondary buttons within the
+          instruction with details pertaining to it. Actions in Freedose were of
+          3 types:
+        </p>
+
+        <ul class="uList">
+          <li>
+            <div class="bulletIcon clearPurpleBG">⚡</div>
+            <span class="fw-600">Immediate:</span> Simple 1-click actions
+          </li>
+          <li>
+            <div class="bulletIcon clearPurpleBG">🌐</div>
+            <span class="fw-600">External:</span>Opens link in browser or
+            download file
+          </li>
+          <li>
+            <div class="bulletIcon clearPurpleBG">📱</div>
+            <span class="fw-600">New page:</span> Opens new page/activity
+          </li>
+        </ul>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/action-hifi-1.png"
+              alt="Examples of action types, concept design"
+              class="oneImageClass image800"
+            />
+            <figcaption>
+              Image 12 - Examples of action types, concept design
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <p class="paraContent">
+          Vaccination proof submission is a crucial part of the process. The
+          process has been split into two section that are accessed
+          sequentially. This distributes cognitive load, groups similar sections
+          for easier operation and secures the process as account details must
+          be accompanied with valid vaccination proof that will be verified
+          digitally.
+        </p>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/action-hifi-2.png"
+              alt="Examples of action types, concept design"
+              class="oneImageClass image800"
+            />
+            <figcaption>
+              Image 13 - Vaccination proof upload process, concept design
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <div class="tinyHeading purpleText">Bonus</div>
+
+        <div class="bigHeading">🌸 Designing for delight</div>
+
+        <p class="paraContent">
+          There were many smaller decisions woven into the experience to ensure
+          the platform could virtually bring a sense of care and community to
+          the users. Freedose relies on the community to step up and hopes to
+          enable people to support each other, small bits of thoughtful positive
+          decisions would help the platform grow naturally. A brief mention of
+          the points are listed below:
+        </p>
+
+        <ul class="uList">
+          <li class="m-bottom-16">
+            <div class="bulletIcon clearPurpleBG">👏</div>
+            <span class="fw-600">User names: </span>Refrain from using sponsor
+            and beneficiary to avoid a transactional relationship. Instead using
+            'participant' and 'supporter'.
+          </li>
+          <li class="m-bottom-16">
+            <div class="bulletIcon clearPurpleBG">📝</div>
+            <span class="fw-600">Content: </span>The content throughout has been
+            written to provide positive encouragement
+          </li>
+          <li class="m-bottom-16">
+            <div class="bulletIcon clearPurpleBG">💜</div>
+            <span class="fw-600">Thank you note: </span> Creating a space to
+            allow exchange of a thank you note
+          </li>
+          <li class="m-bottom-16">
+            <div class="bulletIcon clearPurpleBG">🎧</div>
+            <span class="fw-600">Support: </span> Providing documentation and
+            video guidance for handling vaccine registration (third party)
+          </li>
+        </ul>
+      </div>
+
+      <div class="inLineimageContainer m-bottom-32">
+        <div class="imageContainer">
+          <figure>
+            <img
+              src="./svg/freedose/delight-hifi-1.png"
+              alt="Examples of action types, concept design"
+              class="oneImageClass image800"
+            />
+            <figcaption>
+              Image 13 - Vaccination proof upload process, concept design
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="contentContainer m-bottom-32">
+        <div class="tinyHeading greenText">Learnings</div>
+
+        <div class="bigHeading">What's next?</div>
+
+        <p class="paraContent">
+          This project never came out of development due to an early stop as
+          state government intervention made vaccinations free for all eligible
+          citizens. It was an incredible learning experience designing under the
+          sprint-like time constraints for a cause important to me. Freedose may
+          never have seen the day of light, but learnings from it will live in
+          all the experiences I design onwards. 💜
+        </p>
+      </div>
+
+      <!-- THIS IS THE END OF CONTENT -->
+
+      <div class="contentContainer m-bottom-32">
+        <div class="tinyHeading purpleText topDivider">Special thanks 💜</div>
 
         <p class="smallParaContent">
           🎨
