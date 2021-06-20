@@ -756,6 +756,11 @@ li {
   display: inline-block;
 }
 
+.clearPurpleBG {
+  background-color: #f5f5ff !important;
+  margin-right: 8px !important;
+}
+
 .twoImageGrid {
   display: grid;
   grid-template-rows: auto;
