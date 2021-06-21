@@ -268,17 +268,14 @@ a.studyItem:active {
 }
 
 .shotOne {
-  grid-area: study1;
   background-image: url("../images/highlight1.png");
 }
 
 .shotTwo {
-  grid-area: study2;
   background-image: url("../images/highlight2.png");
 }
 
 .shotThree {
-  grid-area: study3;
   background-image: url("../images/highlight3.png");
 }
 
@@ -427,12 +424,13 @@ a.contactLink {
 
 .highlightBG {
   width: 100%;
-  background-color: #f9f9f9;
-  color: #111111;
+  background-color: #f0f4f2;
+  color: #222222;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 32px;
+  margin-bottom: 64px;
 }
 
 .projHeadContainer {
@@ -848,22 +846,94 @@ figure {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 80px 0px 220px;
+  padding: 80px 0px 32px;
 }
 
 .highlightTitle {
+  color: #222222;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  font-size: 2.5rem;
+  line-height: 1.4em;
+  font-weight: 700;
+  text-align: center;
+
+  margin-bottom: 32px;
 }
 
-.highlightDescText {
+.highlightDesc {
+  color: #444444;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   font-size: 1.4rem;
   line-height: 1.6em;
   font-weight: 400;
-  padding-bottom: 8px;
+  max-width: 800px;
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.highlightImage {
+  width: 100%;
+  max-width: 1140px;
+  transform: scale(1);
+}
+
+.highlightButton:active {
+  transform: scale(0.95);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.highlightButton {
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #111111;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.highlightSecButton {
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: #111111;
+  background-color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6em;
+  font-weight: 700;
+  margin-bottom: 40px;
+  border: 1px solid #111111;
+}
+
+.highlightSecButton:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.highlightSecButton:active {
+  transform: scale(0.95);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.highlightContentContainer {
+  width: 100%;
+  max-width: 680px;
+  padding: 0px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 /*mobile*/
@@ -911,10 +981,6 @@ figure {
   }
 
   /* project pages */
-
-  .bodyContainer {
-    padding: 0px 24px;
-  }
 
   .purpleBG {
     padding: 0px 24px;
