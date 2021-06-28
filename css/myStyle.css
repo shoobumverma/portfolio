@@ -135,7 +135,7 @@ h1 {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "heading heading heading" "desc desc desc" "study1 study2 study3";
+  grid-template-areas: "heading heading heading" "desc desc desc" ". . .";
   column-gap: 16px;
   row-gap: 0px;
 }
@@ -249,17 +249,14 @@ a.studyItem:active {
 }
 
 .studyOne {
-  grid-area: study1;
   background-image: url("../images/study1.png");
 }
 
 .studyTwo {
-  grid-area: study2;
   background-image: url("../images/study2.png");
 }
 
 .studyThree {
-  grid-area: study3;
   background-image: url("../images/study3.png");
 }
 
@@ -942,7 +939,7 @@ figure {
     display: grid;
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "heading" "desc" "study1" "study2" "study3";
+    grid-template-areas: "heading" "desc" "." "." ".";
     column-gap: 16px;
     row-gap: 0px;
   }
@@ -1068,7 +1065,7 @@ figure {
   .caseStudiesGrid {
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "heading heading" "desc desc" "study1 study2" "study3 .";
+    grid-template-areas: "heading heading" "desc desc" ". ." ". .";
     column-gap: 24px;
     row-gap: 0px;
   }
