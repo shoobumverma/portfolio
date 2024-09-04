@@ -62,7 +62,7 @@ a:active {
   grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 1fr;
   grid-gap: 0px;
-  grid-template-areas: "nav" "intro" "caseStudies" "shots" "contact";
+  grid-template-areas: "nav" "intro" "shots" "caseStudies" "contact";
   width: 100%;
   max-width: 1040px;
   justify-content: center;
@@ -118,7 +118,7 @@ h1 {
   font-size: 1.4rem;
   line-height: 1.6em;
   font-weight: 400;
-  color: #a3a3a3;
+  color: #888888;
 }
 
 .highlightName {
@@ -872,7 +872,7 @@ figure {
   line-height: 1.6em;
   font-weight: 400;
   max-width: 800px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 40px;
 }
 
